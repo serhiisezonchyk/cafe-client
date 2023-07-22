@@ -1,0 +1,28 @@
+.section {
+  @apply py-12 lg:py-24;
+
+  .divHandler {
+    @apply container mx-auto;
+
+    .introTextDiv {
+      @apply text-center mb-20;
+    }
+  }
+
+  .categories {
+    @apply grid grid-cols-4 gap-4 lg:gap-[30px];
+    .category {
+      @apply cursor-pointer text-center;
+
+      .imageContainer {
+        @apply mb-2 lg:mb-8 hover:scale-105 transition-all duration-300 flex justify-around;
+        img {
+          @apply w-auto lg:h-[150px] h-[100px];
+        }
+      }
+      h3{
+        @apply lg:text-2xl capitalize font-semibold text-blue lg:mb-2;
+      }
+    }
+  }
+}

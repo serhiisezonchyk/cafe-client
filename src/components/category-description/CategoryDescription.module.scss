@@ -1,0 +1,29 @@
+.formHandler{
+
+    @apply flex flex-col md:flex-row justify-between gap-[30px];
+
+    .eachCategory{
+        @apply w-full lg:max-w-2xl bg-white shadow-primary text-center h-[560px] rounded-[60px] py-12 px-8;
+
+        .price{
+            @apply text-5xl font-bold text-blue mb-4;
+        }
+        .name{
+            @apply capitalize mb-12 text-blue font-medium;
+        }
+        .list{
+            @apply flex flex-col gap-y-4 max-w-[230px] mx-auto;
+
+            .listItem{
+                @apply flex items-center gap-x-3;
+
+                .listItemIcon{
+                    @apply text-orange text-xl;
+                }
+                .listItemName{
+                    @apply capitalize;
+                }
+            }
+        }
+    }
+}

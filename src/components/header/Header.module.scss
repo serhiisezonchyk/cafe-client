@@ -1,0 +1,19 @@
+.header{
+    @apply fixed w-full right-0 left-0 z-10 transition-all duration-300;
+
+    .navitems{
+        @apply container mx-auto flex justify-between items-center;
+
+        img{
+            @apply h-[30px];
+        }
+        .navlarge{
+            @apply hidden lg:flex;
+        }
+
+        .navsmall{
+            @apply fixed bg-yellow shadow-lg
+            left-0 w-full top-[68px] h-full overflow-hidden transition-all;
+        }
+    }
+}

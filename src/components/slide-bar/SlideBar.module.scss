@@ -1,0 +1,29 @@
+.slide{
+    @apply py-12 lg:py-16;
+
+    .slideContainer{
+        @apply container mx-auto text-center lg:text-left;
+        .slideItem{
+            @apply flex justify-between flex-col items-center lg:flex-row;
+
+            .dataDiv{
+                @apply flex-1;
+                h1{
+                    @apply text-blue text-[36px] leading-tight lg:text-[72px] lg:leading-[98px] font-extrabold mb-4;
+                }
+                p{
+                    @apply text-base lg:text-[18px] lg:leading-8 max-w-[540px] mb-8;
+                }
+                button{
+                    @apply btn mb-8 lg:mb-0;
+                }
+            }
+            .imageDiv{
+                @apply flex-1 flex justify-center;
+                img{
+                    @apply h-96 lg:h-auto;
+                }
+            }
+        }
+    }
+}

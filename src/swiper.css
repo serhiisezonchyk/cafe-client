@@ -1,0 +1,30 @@
+.mySlider .swiper-button-prev,
+.mySlider .swiper-button-next {
+  color: #fe9a82;
+  transition: all 0.1s easy in;
+}
+
+.mySlider .swiper-button-prev:hover,
+.mySlider .swiper-button-next:hover {
+  color: #f86b48;
+  transform: scale(1.3);
+  transition: all 0.1s easy in;
+}
+
+.mySlider .swiper-button-prev:after,
+.mySlider .swiper-button-next:after {
+  font-size: 30px;
+}
+
+.mySlider .swiper-pagination-bullet {
+  background: #f86b48;
+}
+
+@media (max-wifth: 768px) {
+  .mySlider .swiper-button-prev:hover,
+  .mySlider .swiper-button-next:hover {
+    color: #f86b48;
+    transform: scale(1);
+    transition: all 0.1s easy in;
+  }
+}
