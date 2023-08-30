@@ -1,0 +1,22 @@
+.mySlider{
+    @apply py-12;
+    .prom-slide{
+        @apply mx-auto text-center flex justify-center md:text-left;
+        .prom-form{
+            @apply flex flex-col md:flex-row;
+            .prom-text-desc{
+                @apply m-0 md:ml-[20px];
+                h1{
+                    @apply text-black  md:text-xl lg:text-3xl;
+                }
+                p{
+                    @apply text-brown;
+                }
+            }
+
+            img{
+                @apply  min-w-[350px] w-[728px] justify-center;
+            }
+        }
+    }
+}

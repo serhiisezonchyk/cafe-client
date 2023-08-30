@@ -1,35 +1,31 @@
-import DogSlider1 from '../assets/img/dog/dog-slider-1.png'
-import DogSlider2 from '../assets/img/dog/dog-slider-2.png'
-import DogSlider3 from '../assets/img/dog/dog-slider-3.png'
-import CatSlider from '../assets/img/dog/cat-slider.png'
+import alco from '../assets/img/alco.png'
+import dish from '../assets/img/dish.png'
+import hookah from '../assets/img/hookah.png'
 
 export const slider_data = [
     {
         id:1,
-        title:'Залишаєте домівку?',
-        image:DogSlider1,
-        subtitle:'Ми доглянемо за вашим собакою!',
-        buttonText:'Залишити заявку',
+        title:'Автентична грузинська кухня',
+        image:dish,
+        subtitle:'САЛОБІЄ - Ресторан сучасної грузинскої кухні . Новий проект  від мережі ресторанів Restwelle на головній вулиці міста Чернігів. - НОВЕ БАЧЕННЯ на Грузинську кухню !',
+        buttonRef:'menu',
+        buttonText:'Переглянути меню',
     },
     {
         id:2,
-        title:'"Як сумно коли господар на роботі..."',
-        image:DogSlider2,
-        subtitle:'Зробимо день веселішим',
-        buttonText:'Залишити заявку',
+        title:'Великий вибір алкоголю',
+        image:alco,
+        subtitle:'Окрім великого асортименту вина ми також маємо смачні коктейлі.',
+        buttonRef:'menu',
+        buttonText:'Переглянути винну карту',
     },
     {
         id:3,
-        title:'"В мене болить лапка..."',
-        image:DogSlider3,
-        subtitle:'Ми відведемо вашого улюбленця до кліники замість вас',
-        buttonText:'Залишити заявку',
+        title:'Завітайте на смачні кальяни',
+        image:hookah,
+        subtitle:'Унікальні за дизайном кальяни да досвідчені кальянщики зроблям ваш вечір кращим.',
+        buttonRef:'order',
+        buttonText:'Забронювати стіл',
     },
-    {
-        id:4,
-        title:'Ми допомогаємо усім!',
-        image:CatSlider,
-        subtitle:'Беремо відповідальність також за годування котиків та рибок',
-        buttonText:'Залишити заявку',
-    }
+
 ]

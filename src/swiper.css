@@ -20,7 +20,7 @@
   background: #f86b48;
 }
 
-@media (max-wifth: 768px) {
+@media (max-width: 768px) {
   .mySlider .swiper-button-prev:hover,
   .mySlider .swiper-button-next:hover {
     color: #f86b48;

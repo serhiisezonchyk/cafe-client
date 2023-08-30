@@ -1,0 +1,18 @@
+.navbar-large {
+  @apply text-[15px];
+
+  ul {
+    @apply flex gap-x-10;
+
+    a {
+      @apply capitalize text-brown-secondary hover:text-brown transition cursor-pointer font-semibold;
+    }
+  }
+
+  &.with-background{
+    a{
+      @apply text-body hover:text-brown-secondary;
+    }
+  }
+
+}

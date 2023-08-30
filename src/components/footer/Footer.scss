@@ -1,0 +1,10 @@
+.footerform {
+  @apply bg-brown py-8 lg:py-4;
+
+  .datadiv {
+    @apply flex text-white flex-col gap-y-6 lg:flex-row items-center justify-between;
+  }
+  .networkslinkdiv {
+    @apply flex bg-[#fe8d71a9] hover:bg-[#fe8d71] w-10 h-10 rounded-full justify-center items-center transition text-2xl mr-2;
+  }
+}

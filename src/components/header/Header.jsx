@@ -1,10 +1,10 @@
 import React from 'react';
-import Logo from '../../assets/img/logo.png';
+import Logo from '../../assets/img/symbol.png';
 import { CgMenuRight } from 'react-icons/cg';
 import Nav from './nav/Nav';
 import NavSmall from './nav-small/NavSmall';
 import InfoHeader from './info-header/InfoHeader';
-import styles from './Header.module.scss'
+import './Header.scss';
 
 const Header = (props) => {
   const [background, setBackground] = React.useState(false);
@@ -15,31 +15,28 @@ const Header = (props) => {
     });
   }, []);
   return (
-    <header
-      className={`${background ? 'bg-white py-3 shadow-md' : 'bg-none py-3'} 
-  ${styles.header}`}
-    >
-      <div className={styles.navitems}>
+    <header className={`${background ? 'with-background' : ''} header`}>
+      <div className='navitems'>
         <a href='#'>
           <img src={Logo} alt=''></img>
         </a>
-        <div className={styles.navlarge}>
-          <Nav {...props} />
+        <div className='navlarge'>
+          <Nav {...props} background={background} />
         </div>
-        <InfoHeader />
+        <InfoHeader background={background} />
         <div
           onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
           className='lg:hidden cursor-pointer'
         >
-          <CgMenuRight className='text-blue text-3xl' />
+          <CgMenuRight />
         </div>
         <div
-          className={`${
-            isMobileNavOpen ? 'max-h-[260px]' : 'max-h-0'
-          } ${styles.navsmall}`}
+          className={`${isMobileNavOpen ? 'is-mobile' : ''} 
+           navsmall
+          `}
         >
           <div className='contents' onClick={() => setIsMobileNavOpen(false)}>
-            <NavSmall {...props} />
+            <NavSmall {...props} background={background} />
           </div>
         </div>
       </div>

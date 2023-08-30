@@ -1,10 +1,10 @@
 import React from 'react';
 import SlideBar from '../slide-bar/SlideBar';
-import styles from "./SlideForm.module.scss"
-const SlideForm = ({orderRef}) => {
+import "./SlideForm.scss"
+const SlideForm = (props) => {
   return (
-    <section className={styles.section} >
-      <SlideBar orderRef={orderRef}/>
+    <section className='section-slide'>
+      <SlideBar {...props}/>
     </section>
   );
 };

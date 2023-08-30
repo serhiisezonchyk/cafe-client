@@ -1,12 +1,16 @@
-import { AiFillYoutube, AiFillInstagram } from 'react-icons/ai';
-
+import {  AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
+import {TbTruckDelivery} from 'react-icons/tb'
 export default [
   {
-    icon: AiFillYoutube ,
-    href: '#',
+    icon: AiFillFacebook ,
+    href: 'https://www.facebook.com/salobie.che/',
   },
   {
     icon: AiFillInstagram ,
-    href: '#',
+    href: 'https://www.instagram.com/salobie_/',
+  },
+  {
+    icon: TbTruckDelivery ,
+    href: 'https://misteram.com.ua/chernigov/salobie',
   },
 ];

@@ -2,21 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@font-face {
+  font-family: 'e-Ukraine-Regular';
+  src: url('./utils/font/e-Ukraine-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base{
   body{
-    @apply bg-white text-blue-secondary;
+    @apply bg-brown text-brown-secondary font-['e-Ukraine-Regular'];
+    ;
   }
   .h2{
-    @apply text-2xl lg:text-4xl text-blue font-bold;
+    @apply text-2xl lg:text-4xl text-brown font-bold;
   }
   .btn,
   .input-control{
-    @apply text-[15px] h-16 rounded-full outline-none;
+    @apply text-[15px] h-16 rounded-[10px] outline-none;
   }
   .btn{
-    @apply px-8 text-white bg-orange hover:bg-orange-hover transition;
+    @apply px-8 text-white bg-brown hover:bg-brown transition;
   }
+
   .input-control{
-    @apply w-full max-w-[514px] px-8 text-blue placeholder:text-blue-secondary;
+    @apply w-full max-w-[514px] px-8 text-brown-secondary placeholder:text-brown-secondary;
   }
 }

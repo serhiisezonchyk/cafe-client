@@ -1,0 +1,21 @@
+.navbar-small {
+  @apply h-full;
+
+  &.with-background{
+    ul{
+      @apply bg-brown;
+    };
+    a{
+      @apply text-body hover:text-brown-secondary;
+    }
+  }
+  ul {
+    @apply flex flex-col justify-center h-full space-y-5 items-stretch text-center bg-body transition-all;
+  }
+  li {
+    @apply h-[30px]  cursor-pointer;
+  }
+  a{
+    @apply text-brown capitalize font-medium;
+  }
+}

@@ -1,0 +1,31 @@
+.section {
+    @apply bg-body pt-6 w-full mx-auto lg:pl-[0px] lg:ml-[0px]  ;
+
+    .divContainer{
+        @apply container mx-auto w-full lg:ml-0 lg:pl-0;
+
+        .formHandler{
+            @apply flex flex-col lg:flex-row w-full justify-between text-brown;
+
+            .imageDiv{
+                @apply h-[200px] order-1 lg:-order-1 lg:mt-16 hidden lg:block;
+                img{
+                    @apply h-[200px];
+                }
+            }
+            .textDiv{
+                @apply flex flex-col  items-center lg:items-end justify-center;
+
+                div{
+                    @apply flex items-center;
+                    svg{
+                        @apply mr-[4px];
+                    }
+                    a{
+                        @apply cursor-pointer ml-[5px] hover:text-black transition-all duration-300 ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

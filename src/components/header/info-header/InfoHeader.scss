@@ -1,0 +1,27 @@
+.infoheader {
+  @apply flex lg:gap-x-10 items-baseline justify-end;
+  .logo {
+    @apply flex items-center;
+    svg {
+      @apply h-[25px] mr-[5px] h-[25px] w-[30px] text-brown;
+    }
+    div {
+      @apply lg:text-[23px] text-brown font-extrabold;
+    }
+    &.with-background {
+      div {
+        @apply text-brown-secondary;
+      }
+      svg{
+        @apply text-brown-secondary;
+      }
+    }
+  }
+  .times {
+    @apply text-sm text-brown;
+
+    &.with-background {
+      @apply text-brown-secondary;
+    }
+  }
+}

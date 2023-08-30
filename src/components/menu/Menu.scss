@@ -1,0 +1,12 @@
+.menu-list{
+    @apply flex flex-row justify-evenly my-[20px] ;
+    .menu-item{
+        @apply rounded-full border-[3px] border-brown-secondary p-[15px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out ;
+        svg{
+            @apply h-[80px] w-[80px] ;
+        }
+    }
+    p{
+        @apply text-center;
+    }
+}

@@ -1,23 +1,22 @@
 import React from 'react';
-import styles from './Nav.module.scss';
+import './Nav.scss';
 const Nav = (props) => {
-  console.log(props);
   return (
-    <nav className={styles.navbar}>
+    <nav className={`navbar-large ${props.background?'with-background':''}`}>
       <ul>
         <li
           onClick={() => {
             props.orderRef.current.scrollIntoView({ behavior: 'smooth' });
           }}
         >
-          <a>Заявка</a>
+          <a>Бронювання</a>
         </li>
         <li
           onClick={() => {
-            props.pricesRef.current.scrollIntoView({ behavior: 'smooth' });
+            props.menuRef.current.scrollIntoView({ behavior: 'smooth' });
           }}
         >
-          <a>Ціни</a>
+          <a>Меню</a>
         </li>
         <li
           onClick={() => {
